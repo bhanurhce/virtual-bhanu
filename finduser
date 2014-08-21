@@ -1,0 +1,17 @@
+#!/bin/bash
+u=$"Username"
+echo -n "Enter the new $u: ";
+read u
+echo $u
+uc=`getent passwd | grep $u | cut -d ":" -f 6`
+echo $uc
+if [ "$uc" != "" ] 
+then
+  echo "User $username already exists!"
+  
+else 
+  echo "User $username dose not exists!"
+
+fi
+
+# now, actually create the user 
