@@ -1,15 +1,16 @@
 #!/bin/bash
-echo -n "Enter the new u: ";
+u=$"Username"
+echo -n "Enter the new $u: ";
 read u
 echo $u
 uc=`getent passwd | grep $u | cut -d ":" -f 6`
 echo $uc
 if [ "$uc" != "" ] 
 then
-  echo "User $u already exists!"
+  echo "User $username already exists!"
   
 else 
-  echo "User $u dose not exists!"
+  echo "User $username dose not exists!"
 
 fi
 
