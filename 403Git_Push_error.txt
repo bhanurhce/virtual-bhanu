@@ -1,0 +1,35 @@
+############403 Github Push error from client ############
+
+####Error###:
+ The requested URL returned error: 403 Forbidden while accessing https://github.com/bhanurhce/rhel6-exapmpleserver.git/info/refs
+
+fatal: HTTP request failed
+
+*************
+
+Solution:
+
+This error is majorly due to the LOGIN credentials from your local machine in the git hub. You have to provide the username & password of github
+
+Add username: $ git config --global user.name "bhanurhce" Username should be github's user account.
+
+Confirm the username: $ git config user.name
+
+once you try to push then it will ask for password:
+
+$ git push -u origin master
+Password:(provide your github's password.)
+
+issue will be solved.
+
+Even if you still get error for askpass:
+
+Error info: [root@virtual-master git]# git push -u origin master
+
+(gnome-ssh-askpass:47356): Gtk-WARNING **: cannot open display:
+
+Then just solve it by command: $ unset SSH_ASKPASS
+
+All will work fine. Hope it helps..
+
+
