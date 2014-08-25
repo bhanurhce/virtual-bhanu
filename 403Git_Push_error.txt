@@ -1,4 +1,8 @@
 ############403 Github Push error from client ############
+ANSWER posted on Stackoverflow:
+
+http://stackoverflow.com/questions/19722521/error-the-requested-url-returned-error-403-forbidden-while-accessing/25443024#25443024
+
 
 ####Error###:
  The requested URL returned error: 403 Forbidden while accessing https://github.com/bhanurhce/rhel6-exapmpleserver.git/info/refs
